@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
@@ -15,8 +9,7 @@ from sklearn.metrics import classification_report, accuracy_score
 file_path = r'C:\Users\Muhammad Ahmad\Downloads\archive (9)\Churn_Modelling.csv'
 data = pd.read_csv(file_path)
 
-# Explore and preprocess the data
-# Selecting relevant features
+
 features = ['CreditScore', 'Geography', 'Gender', 'Age', 'Tenure', 'Balance', 
             'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
 X = data[features]
@@ -67,10 +60,5 @@ print("Gradient Boosting Classifier")
 accuracy_gb = accuracy_score(y_test, y_pred_gb) * 100
 print(f"Accuracy: {accuracy_gb:.2f}%")
 print(classification_report(y_test, y_pred_gb))
-
-
-# In[ ]:
-
-
 
 
