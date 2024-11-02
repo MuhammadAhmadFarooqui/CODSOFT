@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
-
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -73,10 +67,3 @@ evaluate_model(dtree, X_train, X_test, y_train, y_test, "Decision Tree")
 # Random Forest Classifier
 rf = RandomForestClassifier(random_state=42)
 evaluate_model(rf, X_train, X_test, y_train, y_test, "Random Forest")
-
-
-# In[ ]:
-
-
-
-
