@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -58,10 +52,3 @@ y_pred_svm = svm_classifier.predict(X_test_tfidf)
 print("Support Vector Machine Classifier")
 print("Accuracy:", accuracy_score(y_test, y_pred_svm))
 print(classification_report(y_test, y_pred_svm))
-
-
-# In[ ]:
-
-
-
-
